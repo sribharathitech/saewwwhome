@@ -1,0 +1,14 @@
+{
+  "name": "sri-bharathi-corporate-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/generate-site.mjs",
+    "test": "node scripts/audit-site.mjs",
+    "test:rendered": "node scripts/test-rendered.mjs",
+    "test:external": "node scripts/check-external-links.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.55.0"
+  }
+}
