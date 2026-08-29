@@ -10,18 +10,18 @@ The shared `Organization` JSON-LD entity uses `https://sribharathi.com/#organiza
 
 | URL | Primary topic | Intent | Secondary topics | H1 | Parent | Priority links |
 |---|---|---|---|---|---|---|
-| `/` | Sri Bharathi corporate group | Branded/corporate | filtration, technology, chemicals | Engineering clarity across industry and technology | — | all major sections and divisions |
-| `/about/` | about Sri Bharathi | Corporate research | group structure, business divisions | One corporate identity. Three specialist businesses. | `/` | three division sites |
-| `/businesses/` | Sri Bharathi businesses | Navigation/comparison | filtration, chemicals, software | Three businesses, clearly defined | `/` | all division pages and sites |
-| `/filtration/` | industrial filtration solutions | Commercial investigation | filter pads, papers, cartridges, lenticular | Industrial filtration built around the process duty | `/businesses/` | filtration product and application pages |
-| `/technology/` | enterprise software and AI services | Commercial investigation | mainframe, Java, AI, testing, mobile | Enterprise technology that respects operational reality | `/businesses/` | specialist technology service pages |
-| `/chemicals/` | chemical manufacturing services | Commercial investigation | contract, custom, blending, private label | Chemical manufacturing services shaped by the specification | `/businesses/` | specialist chemical service pages |
-| `/industries/` | industries served | Industry investigation | pharmaceutical, gelatin, food, oil, enterprise | Capabilities connected to industry challenges | `/` | relevant division/application pages |
-| `/innovation/` | industrial and digital innovation | Informational/corporate | computer vision, trials, engineering | Innovation starts with a problem worth solving | `/` | technology, filtration resource |
-| `/quality/` | Sri Bharathi quality approach | Trust/informational | requirements, verification, documentation | Quality is evidence against a defined requirement | `/` | filtration quality and documents |
-| `/resources/` | technical resources | Informational/navigation | filtration guides, manufacturing, software | Technical context for better questions | `/` | guide and specialist libraries |
+| `/` | Sri Bharathi corporate group | Branded/corporate | filtration, technology, chemicals | Industrial Filtration, Technology & Chemicals | — | all major sections and divisions |
+| `/about/` | about Sri Bharathi | Corporate research | group structure, business divisions | About Sri Bharathi | `/` | three division sites |
+| `/businesses/` | Sri Bharathi businesses | Navigation/comparison | filtration, software, chemicals | Sri Bharathi Business Divisions | `/` | all division pages and sites |
+| `/filtration/` | industrial filtration solutions | Commercial investigation | filter pads, papers, cartridges, lenticular | Industrial Filtration Solutions | `/businesses/` | filtration product and application pages |
+| `/technology/` | enterprise software and AI services | Commercial investigation | mainframe, Java, AI, testing, mobile | Enterprise Software, AI & Technology Services | `/businesses/` | specialist technology service pages |
+| `/chemicals/` | chemical manufacturing services | Commercial investigation | contract, custom, blending, private label | Chemical Manufacturing Services | `/businesses/` | specialist chemical service pages |
+| `/industries/` | industries served | Industry investigation | pharmaceutical, gelatin, food, oil, enterprise | Industries We Serve | `/` | relevant division/application pages |
+| `/innovation/` | industrial and digital innovation | Informational/corporate | computer vision, trials, engineering | Industrial & Digital Innovation | `/` | technology, filtration resource |
+| `/quality/` | Sri Bharathi quality approach | Trust/informational | requirements, verification, documentation | Quality Approach at Sri Bharathi | `/` | filtration quality and documents |
+| `/resources/` | technical resources | Informational/navigation | filtration guides, manufacturing, software | Technical Resources & Insights | `/` | guide and specialist libraries |
 | `/resources/understanding-depth-filtration/` | depth filtration | Informational | media properties, trials, selection | Understanding depth filtration | `/resources/` | filtration overview and specialist selection pages |
-| `/contact/` | contact Sri Bharathi | Contact/navigation | filtration enquiry, technology enquiry, chemical enquiry | Route your enquiry to the right team | `/` | all specialist contact routes |
+| `/contact/` | contact Sri Bharathi | Contact/navigation | filtration enquiry, technology enquiry, chemical enquiry | Contact Sri Bharathi | `/` | all specialist contact routes |
 
 ## Internal-linking plan
 

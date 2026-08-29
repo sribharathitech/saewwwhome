@@ -85,12 +85,41 @@ await assertOrder('businesses/index.html', ['<h2>Industrial filtration</h2>', '<
 await assertOrder('contact/index.html', ['<p class="tag">Filtration</p>', '<p class="tag">Technology</p>', '<p class="tag">Chemicals</p>']);
 await assertOrder('404.html', ['<h2>Filtration</h2>', '<h2>Technology</h2>', '<h2>Chemicals</h2>']);
 
+function routeForFile(file) {
+  const rel = path.relative(root, file).replaceAll('\\','/');
+  if (rel === 'index.html') return '/';
+  return `/${rel.replace(/index\.html$/, '')}`;
+}
+const routeToFile = new Map(production.map(file => [routeForFile(file), file]));
+const graph = new Map([...routeToFile.keys()].map(route => [route, new Set()]));
+for (const [route, file] of routeToFile) {
+  const html = await readFile(file, 'utf8');
+  for (const hit of html.matchAll(/href="([^"]+)"/gi)) {
+    const href = hit[1].split('#')[0].split('?')[0];
+    if (!href.startsWith('/')) continue;
+    if (/index\.html$/i.test(href)) errors.push(`${route}: exposes index.html variant ${href}`);
+    if (routeToFile.has(href)) graph.get(route).add(href);
+  }
+}
+const depths = new Map([['/', 0]]);
+const queue = ['/'];
+while (queue.length) {
+  const route = queue.shift();
+  for (const target of graph.get(route) || []) {
+    if (depths.has(target)) continue;
+    depths.set(target, depths.get(route) + 1);
+    queue.push(target);
+  }
+}
+for (const route of routeToFile.keys()) if (!depths.has(route)) errors.push(`${route}: orphan indexable page`);
+const crawlDepthSummary = [...depths.entries()].sort((a,b) => a[1] - b[1] || a[0].localeCompare(b[0])).map(([route,depth]) => `${route}:${depth}`).join(', ');
+
 const sitemap = await readFile(path.join(root,'sitemap.xml'),'utf8');
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
 if (sitemapUrls.length !== production.length) errors.push(`sitemap: ${sitemapUrls.length} URLs for ${production.length} indexable pages`);
 for (const canonical of canonicals.keys()) if (!sitemapUrls.includes(canonical)) errors.push(`sitemap: missing ${canonical}`);
 if (!errors.length) {
-  console.log(`PASS: ${production.length} indexable pages; ${titles.size} unique titles; ${descriptions.size} unique descriptions; ${canonicals.size} unique canonicals; ${checkedLinks} local references; JSON-LD parsed.`);
+  console.log(`PASS: ${production.length} indexable pages; ${titles.size} unique titles; ${descriptions.size} unique descriptions; ${canonicals.size} unique canonicals; ${checkedLinks} local references; zero orphan pages; JSON-LD parsed.\nCrawl depth: ${crawlDepthSummary}`);
 } else {
   console.error(`FAIL: ${errors.length} issue(s)\n${errors.join('\n')}`);
   process.exitCode = 1;

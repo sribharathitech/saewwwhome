@@ -17,12 +17,11 @@ function New-SquareLogo([int]$Size) {
     $canvas = New-Object System.Drawing.Bitmap $Size, $Size
     $graphics = [System.Drawing.Graphics]::FromImage($canvas)
     try {
-      $graphics.Clear([System.Drawing.Color]::White)
+      $graphics.Clear([System.Drawing.Color]::Transparent)
       $graphics.CompositingQuality = [System.Drawing.Drawing2D.CompositingQuality]::HighQuality
       $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
       $graphics.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::HighQuality
-      $padding = [Math]::Max(1, [Math]::Round($Size * 0.06))
-      $available = $Size - (2 * $padding)
+      $available = $Size
       $scale = [Math]::Min($available / $sourceImage.Width, $available / $sourceImage.Height)
       $width = [Math]::Round($sourceImage.Width * $scale)
       $height = [Math]::Round($sourceImage.Height * $scale)

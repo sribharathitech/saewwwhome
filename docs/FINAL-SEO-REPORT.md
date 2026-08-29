@@ -2,6 +2,16 @@
 
 Completed: 29 August 2026
 
+## Final Optimisation Outcome
+
+- Replaced marketing-led primary headings with explicit, search-intent H1s while retaining the approved statements as visible hero support copy.
+- Strengthened the homepage’s first crawlable text so Sri Bharathi is immediately identified as the corporate parent for Filtration, Technology and Chemicals.
+- Rewrote meta descriptions as differentiated, factual search-result copy.
+- Confirmed that parent division pages remain concise overviews and defer product, application and detailed service intent to the specialist sites.
+- Added automated orphan-page, crawl-depth, clean-link and three-viewport rendered checks.
+- Preserved the approved architecture, midnight-blue/teal theme, responsive layout and Filtration → Technology → Chemicals ordering.
+- Removed no pages and created no speculative SEO content.
+
 ## Website Architecture
 
 | Production URL | Purpose |
@@ -26,22 +36,22 @@ No separate industry pages were created. The available verified material support
 
 The complete topic, intent, secondary-topic, parent and priority-link map is in [seo-strategy.md](./seo-strategy.md). Each indexable page owns a distinct intent: corporate identity, business routing, one of three division overviews, industries, innovation, quality, resources, one educational topic, or contact. This separation limits cannibalisation with the specialist subdomains.
 
-## Metadata
+## Final Search-Intent and Metadata Table
 
-| URL | Title | Meta description | H1 | Canonical |
-|---|---|---|---|---|
-| `/` | Sri Bharathi \| Filtration, Technology & Chemicals | Sri Bharathi connects industrial filtration, enterprise technology and chemical manufacturing services through one corporate group. | Engineering clarity across industry and technology | `https://sribharathi.com/` |
-| `/about/` | About Sri Bharathi \| Engineering & Technology Group | Understand Sri Bharathi, the corporate relationship between its filtration, technology and chemicals businesses, and how enquiries are routed. | One corporate identity. Three specialist businesses. | `https://sribharathi.com/about/` |
-| `/businesses/` | Sri Bharathi Businesses \| Filtration, Technology & Chemicals | Explore the Sri Bharathi filtration, technology and chemicals businesses and find the specialist division for your requirement. | Three businesses, clearly defined | `https://sribharathi.com/businesses/` |
-| `/filtration/` | Industrial Filtration Solutions \| Sri Bharathi | Corporate overview of Sri Bharathi industrial filter pads, papers, cartridges, lenticular filters and process application support. | Industrial filtration built around the process duty | `https://sribharathi.com/filtration/` |
-| `/technology/` | Enterprise Software & AI Services \| Sri Bharathi | Corporate overview of Sri Bharathi enterprise software, mainframe modernisation, Java, AI, machine learning, testing and mobile services. | Enterprise technology that respects operational reality | `https://sribharathi.com/technology/` |
-| `/chemicals/` | Chemical Manufacturing Services \| Sri Bharathi | Corporate overview of Sri Bharathi contract chemical manufacturing, custom manufacturing, chemical blending and private labelling. | Chemical manufacturing services shaped by the specification | `https://sribharathi.com/chemicals/` |
-| `/industries/` | Industries We Serve \| Sri Bharathi | See where Sri Bharathi filtration, technology and chemical capabilities contribute across process industries, manufacturing and enterprise systems. | Capabilities connected to industry challenges | `https://sribharathi.com/industries/` |
-| `/innovation/` | Industrial & Digital Innovation \| Sri Bharathi | How Sri Bharathi frames practical innovation across filtration, chemicals, manufacturing software, AI and enterprise modernisation. | Innovation starts with a problem worth solving | `https://sribharathi.com/innovation/` |
-| `/quality/` | Quality Approach \| Sri Bharathi | Sri Bharathi quality approach: define requirements, assess application fit, verify relevant parameters and maintain useful documentation. | Quality is evidence against a defined requirement | `https://sribharathi.com/quality/` |
-| `/resources/` | Technical Resources & Insights \| Sri Bharathi | Sri Bharathi knowledge centre for responsible guidance on industrial filtration, manufacturing, enterprise software and applied AI. | Technical context for better questions | `https://sribharathi.com/resources/` |
-| `/resources/understanding-depth-filtration/` | Understanding Depth Filtration \| Sri Bharathi | Learn how depth-filter media captures particles, which process conditions affect performance and what information supports media selection. | Understanding depth filtration | `https://sribharathi.com/resources/understanding-depth-filtration/` |
-| `/contact/` | Contact Sri Bharathi \| Corporate & Division Enquiries | Contact Sri Bharathi and route filtration, technology, chemical manufacturing or general corporate enquiries to the appropriate team. | Route your enquiry to the right team | `https://sribharathi.com/contact/` |
+| URL | Primary Search Intent | SEO Title | H1 | Meta Description | Canonical |
+|---|---|---|---|---|---|
+| `/` | Understand Sri Bharathi and its three specialist businesses | Sri Bharathi \| Filtration, Technology & Chemicals | Industrial Filtration, Technology & Chemicals | Discover Sri Bharathi, the corporate parent connecting specialist businesses in industrial filtration, enterprise technology and chemical manufacturing. | `https://sribharathi.com/` |
+| `/about/` | Research Sri Bharathi’s corporate identity and group structure | About Sri Bharathi \| Engineering & Technology Group | About Sri Bharathi | Learn how Sri Bharathi connects specialist filtration, enterprise technology and chemical manufacturing businesses under one corporate identity. | `https://sribharathi.com/about/` |
+| `/businesses/` | Compare the three Sri Bharathi divisions and choose a route | Sri Bharathi Businesses \| Filtration, Technology & Chemicals | Sri Bharathi Business Divisions | Compare Sri Bharathi’s filtration, technology and chemicals businesses and find the specialist division for your technical requirement. | `https://sribharathi.com/businesses/` |
+| `/filtration/` | Understand the Filtration Division and reach specialist products | Industrial Filtration Solutions \| Sri Bharathi | Industrial Filtration Solutions | Meet Sri Bharathi’s Filtration Division and find specialist filter pads, papers, cartridges, lenticular filters and application guidance. | `https://sribharathi.com/filtration/` |
+| `/technology/` | Understand technology capabilities and reach detailed services | Enterprise Software & AI Services \| Sri Bharathi | Enterprise Software, AI & Technology Services | Meet Sri Bharathi Technology and find enterprise software, mainframe modernisation, Java, AI, testing and mobile application services. | `https://sribharathi.com/technology/` |
+| `/chemicals/` | Understand chemical manufacturing routes and reach the specialist team | Chemical Manufacturing Services \| Sri Bharathi | Chemical Manufacturing Services | Meet Sri Bharathi Chemicals and explore contract manufacturing, custom chemical manufacturing, blending and private-labelling services. | `https://sribharathi.com/chemicals/` |
+| `/industries/` | See group capabilities in industry context | Industries We Serve \| Sri Bharathi | Industries We Serve | See how Sri Bharathi supports process industries and enterprise systems through relevant filtration, technology and chemical capabilities. | `https://sribharathi.com/industries/` |
+| `/innovation/` | Understand the group’s practical innovation method | Industrial & Digital Innovation \| Sri Bharathi | Industrial & Digital Innovation | See how Sri Bharathi approaches industrial and digital innovation through problem definition, testing, software and process evidence. | `https://sribharathi.com/innovation/` |
+| `/quality/` | Evaluate Sri Bharathi’s corporate quality philosophy | Quality Approach \| Sri Bharathi | Quality Approach at Sri Bharathi | Understand Sri Bharathi’s corporate quality approach: define requirements, verify relevant parameters and maintain useful documentation. | `https://sribharathi.com/quality/` |
+| `/resources/` | Find curated technical guidance and specialist libraries | Technical Resources & Insights \| Sri Bharathi | Technical Resources & Insights | Use Sri Bharathi’s technical resources for practical context on filtration, manufacturing, enterprise software and applied AI. | `https://sribharathi.com/resources/` |
+| `/resources/understanding-depth-filtration/` | Learn how depth filtration works and how media is assessed | Understanding Depth Filtration \| Sri Bharathi | Understanding depth filtration | Learn how depth-filter media captures particles, which process conditions affect performance and what information supports media selection. | `https://sribharathi.com/resources/understanding-depth-filtration/` |
+| `/contact/` | Contact the corporate group or correct specialist division | Contact Sri Bharathi \| Corporate & Division Enquiries | Contact Sri Bharathi | Contact Sri Bharathi for corporate, filtration, technology or chemical manufacturing enquiries and reach the appropriate specialist team. | `https://sribharathi.com/contact/` |
 
 Automated checks confirm 12 unique titles, 12 unique descriptions, 12 unique HTTPS canonicals and exactly one H1 on every production page.
 
@@ -57,6 +67,10 @@ Every indexable page includes a graph with:
 
 The Organization expresses the three official specialist websites as `subOrganization` entities. No ratings, reviews, offers, prices, FAQ schema or group-wide certification claims were added. All JSON-LD parsed successfully in the automated audit.
 
+### Resource article validation
+
+`/resources/understanding-depth-filtration/` remains a focused educational guide rather than a product landing page. It distinguishes depth and surface capture, explains relevant media and process variables without promising absolute retention, recommends representative trials, and links to the parent filtration overview plus specialist selection and contact routes. Its publication and modification date remains 29 August 2026, matching the date the article was created. The visible “Reviewed by Sri Bharathi” attribution agrees with the Organization author/publisher entities in Article JSON-LD.
+
 ## Internal Linking
 
 - Corporate business ordering is consistently Filtration → Technology → Chemicals across overview cards, enquiry routes, structured data, footer links and recovery navigation.
@@ -67,6 +81,31 @@ The Organization expresses the three official specialist websites as `subOrganiz
 - `/industries/` maps each challenge to the division that genuinely contributes; unrelated divisions are not forced into a section.
 - The technical article links back to its filtration parent and the specialist selection/contact paths.
 - Descriptive anchor text replaces generic “click here” links.
+
+## Cross-Subdomain Discovery
+
+The parent site links through ordinary HTML—not only JSON-LD—to all three specialist properties. Division overviews use descriptive deep links to relevant product, application, service and contact pages. All 29 unique specialist links were reachable during the final audit.
+
+The reverse-link audit found:
+
+| Specialist site | Links back to parent | Current target | Recommended action |
+|---|---|---|---|
+| `filter.sribharathi.com` | Yes | `https://www.sribharathi.com` | Change to `https://sribharathi.com/` |
+| `tech.sribharathi.com` | Yes | `https://www.sribharathi.com/` | Change to `https://sribharathi.com/` |
+| `chemical.sribharathi.com` | Yes | `https://www.sribharathi.com/` | Change to `https://sribharathi.com/` |
+
+At audit time, the `www` URL returned `200` without redirecting to the preferred apex host. The specialist repositories are outside this task, so their links were documented rather than modified.
+
+## Crawl Path and Depth
+
+The crawl simulation starts from `/`, follows only ordinary internal HTML links, and maps canonical production routes. There are no orphan indexable pages, JS-only essential paths or internal `index.html` links.
+
+| Crawl depth | URLs |
+|---|---|
+| 0 | `/` |
+| 1 | `/about/`, `/businesses/`, `/filtration/`, `/technology/`, `/chemicals/`, `/industries/`, `/innovation/`, `/quality/`, `/resources/`, `/resources/understanding-depth-filtration/`, `/contact/` |
+
+All indexable pages are therefore reachable within one click of the homepage. Persistent navigation and the footer provide additional crawl paths.
 
 ## Technical SEO
 
@@ -95,18 +134,22 @@ The Organization expresses the three official specialist websites as `subOrganiz
 - The corporate visual system uses midnight blue and teal with a restrained orange brand accent, deliberately separating the parent-site identity from the filtration website’s orange-led presentation.
 - One small deferred JavaScript file controls the mobile menu; core navigation and content remain usable without it.
 - System fonts avoid third-party font requests.
-- The official logo has explicit dimensions and is 22 KB.
+- The official logo has explicit dimensions and is 22 KB. The header copy is loaded normally; the repeated below-the-fold footer copy uses lazy loading and asynchronous decoding.
+- The supplied Sri Bharathi symbol is packaged as `favicon.ico`, a 32×32 PNG favicon and a 180×180 Apple touch icon.
+- The hero diagram is CSS decoration and is hidden from assistive technology rather than exposed as a meaningless image.
 - Responsive grids, tap targets, visible focus styling and reduced-motion handling are implemented.
-- Automated rendered checks found no horizontal overflow at 1920 px or 390 px.
+- Automated rendered checks found no horizontal overflow at 390 px, 768 px or 1440 px on every production route.
 - Local Lighthouse result: Performance 100, Accessibility 100, Best Practices 100, SEO 100; LCP 1.2 s, CLS 0, TBT 0 ms. Production results can vary with hosting/network conditions.
 
 ### Validation results
 
 - 12 indexable pages crawled.
-- 399 local asset/link references checked with no broken references.
+- 425 local asset/link references checked with no broken references.
+- Zero orphan pages; all 11 non-home indexable routes have crawl depth 1.
 - 29 unique specialist-site links checked live; all were reachable at audit time.
-- 13 rendered routes checked, including `404.html`.
+- 13 rendered routes checked at 390 px, 768 px and 1440 px, including `404.html`.
 - Mobile menu opened, navigated to About and exposed the correct accessible state.
+- Rendered image checks found no missing or zero-width image assets.
 - No browser console or page errors occurred.
 - JSON-LD is syntactically valid.
 - Screenshots for desktop and mobile review are stored in `docs/screenshots/`.
@@ -116,14 +159,15 @@ The Organization expresses the three official specialist websites as `subOrganiz
 After deployment:
 
 1. Confirm the existing Domain property for `sribharathi.com`, or create one and complete DNS verification. No verification token existed in this repository, so none was invented.
-2. Test `https://sribharathi.com/robots.txt` and `https://sribharathi.com/sitemap.xml` in a public browser.
-3. Submit `https://sribharathi.com/sitemap.xml` under **Indexing → Sitemaps**.
-4. Use **URL inspection → Test live URL** for the homepage, three division overviews, Industries, Resources, the depth-filtration guide and Contact.
-5. Request indexing for those priority URLs after the live test confirms the intended canonical and crawlable HTML.
-6. Inspect **Pages** weekly for the first month for duplicate canonical choices, crawled-not-indexed URLs, soft 404s or legacy taxonomy URLs.
-7. Review **Core Web Vitals** after enough field data accumulates; local Lighthouse scores are lab data, not Chrome UX Report field data.
-8. Review **Links** to find any valuable legacy paths that require an edge-level redirect.
-9. If a verification meta tag is preferred instead of DNS, obtain the exact token from Search Console and add it to the shared page template; never fabricate it.
+2. Open and test `https://sribharathi.com/robots.txt` after deployment.
+3. Open `https://sribharathi.com/sitemap.xml`, then submit it under **Indexing → Sitemaps**.
+4. Use **URL inspection → Test live URL** for the homepage.
+5. Inspect the Filtration, Technology and Chemicals division pages in that order.
+6. Inspect `/resources/understanding-depth-filtration/` and confirm its Article and canonical signals.
+7. Request indexing for the priority URLs only after live tests show crawlable HTML and the intended canonical.
+8. Monitor the **Pages** report weekly for the first month for soft 404s, crawled-not-indexed URLs and legacy taxonomy paths.
+9. Monitor Google-selected canonicals, especially apex versus `www`; configure the host redirect and update specialist backlinks if Google sees both hosts.
+10. Review **Core Web Vitals** after field data accumulates; local Lighthouse scores are lab data, not Chrome UX Report field data.
 
 ## Google Indexing
 
@@ -143,6 +187,22 @@ Priority inspection/submission order:
 12. `https://sribharathi.com/contact/`
 
 Do not submit `404.html`, `/categories/` or `/tags/`.
+
+## Issues Discovered and Fixed
+
+- Marketing-led H1s did not always state the page topic directly; explicit H1s now lead each page and the approved messages remain as supporting copy.
+- Several meta descriptions read like inventory statements; they now identify the division or benefit and provide clearer search-result context.
+- The rendered audit previously covered mobile and one large desktop size; it now covers every route at 390 px, 768 px and 1440 px.
+- Crawlability was inferred from link checks but not measured; the audit now computes graph reachability and crawl depth.
+- Footer logo copies loaded eagerly on every page; below-the-fold copies now use lazy loading while the header logo remains immediately available.
+
+## Issues Intentionally Left Unchanged
+
+- The approved midnight-blue/teal design, navigation, page architecture and visual components were not redesigned.
+- Existing title tags were already unique and aligned with search intent, so only descriptions and H1 semantics were materially refined.
+- The depth-filtration article was retained as the sole initial article. Its technical scope, visible review attribution, Article schema, breadcrumb and specialist links remain appropriate.
+- No additional industry pages, FAQ schema, service schema, reviews, ratings, certifications or commercial offers were introduced.
+- Specialist-site content and repositories were not changed; their `www` backlinks are documented as an external action.
 
 ## Google Indexing Checklist
 
@@ -174,6 +234,8 @@ Do not submit `404.html`, `/categories/` or `/tags/`.
 
 - The files are implemented locally but have not been committed, pushed or deployed; publishing was not requested and would change the remote repository.
 - Search Console verification and submission require access to the property/DNS. No verification token was present locally.
+- `https://www.sribharathi.com/` currently returns `200` instead of redirecting to the preferred apex host. Configure a host-level permanent redirect after confirming the GitHub Pages/DNS setup.
+- All three specialist sites currently link to the `www` parent URL. Update those links to `https://sribharathi.com/` in their own repositories.
 - Production HTTP redirects cannot be configured purely through GitHub Pages. Historical URL data should be reviewed after deployment or from existing Search Console/backlink tools.
 - The chemical specialist site contains broad marketing claims and template remnants. Parent-site wording was deliberately conservative. Chemical capabilities, site address, certifications, capacity and regulatory scope should be confirmed by the business before richer corporate content is added.
 - No analytics or consent platform was added because none existed and no tracking requirement was supplied.
