@@ -6,7 +6,8 @@
     "build": "node scripts/generate-site.mjs",
     "test": "node scripts/audit-site.mjs",
     "test:rendered": "node scripts/test-rendered.mjs",
-    "test:external": "node scripts/check-external-links.mjs"
+    "test:external": "node scripts/check-external-links.mjs",
+    "test:link-signals": "node scripts/audit-link-signals.mjs"
   },
   "devDependencies": {
     "playwright-core": "^1.55.0"
