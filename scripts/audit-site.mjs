@@ -80,7 +80,7 @@ async function assertOrder(relativeFile, labels) {
     previous = current;
   }
 }
-await assertOrder('index.html', ['<h3>Industrial filtration</h3>', '<h3>Technology</h3>', '<h3>Chemicals</h3>']);
+await assertOrder('index.html', ['<h3>Filtration</h3>', '<h3>Technology</h3>', '<h3>Chemicals</h3>']);
 await assertOrder('businesses/index.html', ['<h2>Industrial filtration</h2>', '<h2>Technology</h2>', '<h2>Chemicals</h2>']);
 await assertOrder('contact/index.html', ['<p class="tag">Filtration</p>', '<p class="tag">Technology</p>', '<p class="tag">Chemicals</p>']);
 await assertOrder('404.html', ['<h2>Filtration</h2>', '<h2>Technology</h2>', '<h2>Chemicals</h2>']);

@@ -6,7 +6,8 @@ const routes = ['/', '/about/', '/businesses/', '/filtration/', '/technology/', 
 const viewports = [
   { name: 'mobile', width: 390, height: 844 },
   { name: 'tablet', width: 768, height: 1024 },
-  { name: 'desktop', width: 1440, height: 1000 }
+  { name: 'desktop', width: 1440, height: 1000 },
+  { name: 'wide-desktop', width: 1920, height: 1080 }
 ];
 const browser = await chromium.launch({ headless: true, executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe' });
 const errors = [];
@@ -44,6 +45,21 @@ await desktopPage.goto(base + '/filtration/', { waitUntil: 'networkidle' });
 await desktopPage.screenshot({ path: 'docs/screenshots/filtration-desktop.png', fullPage: true });
 await desktop.close();
 
+const wide = await browser.newContext({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
+const widePage = await wide.newPage();
+await widePage.goto(base + '/', { waitUntil: 'networkidle' });
+const homeHeroHeight = await widePage.locator('.hero').evaluate(element => element.getBoundingClientRect().height);
+const homeHeroTop = await widePage.locator('.hero').evaluate(element => element.getBoundingClientRect().top);
+await widePage.screenshot({ path: 'docs/screenshots/home-wide.png', fullPage: false });
+await widePage.goto(base + '/businesses/', { waitUntil: 'networkidle' });
+await widePage.evaluate(() => window.scrollTo(0, 0));
+const businessesHeroHeight = await widePage.locator('.hero').evaluate(element => element.getBoundingClientRect().height);
+const businessesHeroTop = await widePage.locator('.hero').evaluate(element => element.getBoundingClientRect().top);
+if (Math.abs(homeHeroHeight - businessesHeroHeight) > 1) errors.push(`hero height mismatch: home ${homeHeroHeight}px, businesses ${businessesHeroHeight}px`);
+if (Math.abs(homeHeroTop - businessesHeroTop) > 1) errors.push(`hero top mismatch: home ${homeHeroTop}px, businesses ${businessesHeroTop}px`);
+await widePage.screenshot({ path: 'docs/screenshots/businesses-wide.png', fullPage: false });
+await wide.close();
+
 const mobile = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1 });
 const mobilePage = await mobile.newPage();
 mobilePage.on('console', message => { if (message.type() === 'error') errors.push(`mobile interaction console: ${message.text()}`); });
@@ -63,5 +79,5 @@ if (errors.length) {
   console.error(`FAIL: ${errors.length} rendered issue(s)\n${errors.join('\n')}`);
   process.exitCode = 1;
 } else {
-  console.log(`PASS: ${routes.length} routes at 390px, 768px and 1440px; navigation, images, overflow, 404, mobile interaction and console checks.`);
+  console.log(`PASS: ${routes.length} routes at 390px, 768px, 1440px and 1920px; navigation, images, overflow, 404, mobile interaction and console checks.`);
 }
